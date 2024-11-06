@@ -93,6 +93,15 @@ export default function Component() {
     return () => sections.forEach((section) => observer.unobserve(section));
   }, []);
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleScroll = (section) => {
+    document.querySelector(`#${section}`)?.scrollIntoView({
+      behavior: 'smooth',
+    });
+    setIsMenuOpen(false); // Close menu after navigation
+  };
+
   const onSubmit = async (event) => {
     setIsLoading(true);
     event.preventDefault();
@@ -161,6 +170,55 @@ export default function Component() {
             )}
           </ul>
         </nav>
+        <nav className="fixed top-0 w-full z-50 md:hidden">
+        <div className="bg-transparent backdrop-blur-md px-4 py-4">
+          <div className="flex items-center justify-between">
+            <button className="flex items-center space-x-2">
+              <img src={profile} alt="Profile" className="w-8 h-8 rounded-full" />
+              <span className="font-medium text-white">Parth Maha</span>
+            </button>
+            <button
+              className="p-2 text-gray-300 hover:text-white"
+              aria-label="Toggle menu"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-menu"
+              >
+                <line x1="4" x2="20" y1="12" y2="12"></line>
+                <line x1="4" x2="20" y1="6" y2="6"></line>
+                <line x1="4" x2="20" y1="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+          <div
+            className={`transition-all duration-300 ease-in-out ${
+              isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+            } overflow-hidden`}
+          >
+            <div className="flex flex-col space-y-4 pt-4">
+              {['Projects', 'Skills', 'Contact', 'Resume'].map((section) => (
+                <button
+                  key={section}
+                  onClick={() => (section === 'Resume' ? window.open('https://x.com/home', '_blank') : handleScroll(section))}
+                  className="px-3 py-2 rounded-lg transition-colors text-left text-gray-300 hover:text-white hover:bg-white/5"
+                >
+                  {section}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </nav>
 
         {/* Home Section */}
         <section
