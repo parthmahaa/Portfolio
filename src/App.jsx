@@ -474,9 +474,6 @@ export default function Component() {
                 <span className="text-gray-300 text-lg">Java</span>
               </div>
               <div className="bg-zinc-900 rounded-lg p-6 flex flex-col items-center justify-center aspect-square">
-                <SiSpringboot className="w-16 h-16 mb-4 p-2 text-[#6DB33F]" />
-              </div>
-              <div className="bg-zinc-900 rounded-lg p-6 flex flex-col items-center justify-center aspect-square">
                 <SiFlutter className="w-16 h-16 mb-4 p-2 text-[#02569B]" />
                 <span className="text-gray-300 text-lg">Flutter</span>
               </div>
