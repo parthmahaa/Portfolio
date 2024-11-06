@@ -171,54 +171,62 @@ export default function Component() {
           </ul>
         </nav>
         <nav className="fixed top-0 w-full z-50 md:hidden">
-        <div className="bg-transparent backdrop-blur-md px-4 py-4">
-          <div className="flex items-center justify-between">
-            <button className="flex items-center space-x-2">
-              <img src={profile} alt="Profile" className="w-8 h-8 rounded-full" />
-              <span className="font-medium text-white">Parth Maha</span>
-            </button>
-            <button
-              className="p-2 text-gray-300 hover:text-white"
-              aria-label="Toggle menu"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-menu"
+          <div className="bg-transparent backdrop-blur-md px-4 py-4">
+            <div className="flex items-center justify-between">
+              <button className="flex items-center space-x-2">
+                <img
+                  src={profile}
+                  alt="Profile"
+                  className="w-8 h-8 rounded-full"
+                />
+                <span className="font-medium text-white">Parth Maha</span>
+              </button>
+              <button
+                className="p-2 text-gray-300 hover:text-white"
+                aria-label="Toggle menu"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
-                <line x1="4" x2="20" y1="12" y2="12"></line>
-                <line x1="4" x2="20" y1="6" y2="6"></line>
-                <line x1="4" x2="20" y1="18" y2="18"></line>
-              </svg>
-            </button>
-          </div>
-          <div
-            className={`transition-all duration-300 ease-in-out ${
-              isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
-            } overflow-hidden`}
-          >
-            <div className="flex flex-col space-y-4 pt-4">
-              {['Projects', 'Skills', 'Contact', 'Resume'].map((section) => (
-                <button
-                  key={section}
-                  onClick={() => (section === 'Resume' ? window.open('https://x.com/home', '_blank') : handleScroll(section))}
-                  className="px-3 py-2 rounded-lg transition-colors text-left text-gray-300 hover:text-white hover:bg-white/5"
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-menu"
                 >
-                  {section}
-                </button>
-              ))}
+                  <line x1="4" x2="20" y1="12" y2="12"></line>
+                  <line x1="4" x2="20" y1="6" y2="6"></line>
+                  <line x1="4" x2="20" y1="18" y2="18"></line>
+                </svg>
+              </button>
+            </div>
+            <div
+              className={`transition-all duration-300 ease-in-out ${
+                isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+              } overflow-hidden`}
+            >
+              <div className="flex flex-col space-y-4 pt-4">
+                {['Projects', 'Skills', 'Contact', 'Resume'].map((section) => (
+                  <button
+                    key={section}
+                    onClick={() =>
+                      section === 'Resume'
+                        ? window.open('https://x.com/home', '_blank')
+                        : handleScroll(section)
+                    }
+                    className="px-3 py-2 rounded-lg transition-colors text-left text-gray-300 hover:text-white hover:bg-white/5"
+                  >
+                    {section}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
 
         {/* Home Section */}
         <section
@@ -307,18 +315,18 @@ export default function Component() {
         {/* Projects Section */}
         <section
           id="Projects"
-          className="min-h-screen w-full py-24 flex items-center justify-center"
+          className="min-h-screen w-full py-24 flex items-center justify-center sm:py-24 sm:px-6 lg:px-8"
         >
           <div className="max-w-4xl mx-auto px-4">
-            <h1 className="text-4xl md:text-5xl font-bold text-center pb-10 mb-12 bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
+            <h1 className="text-4xl sm:text-4xl md:text-5xl font-bold text-center pb-10 sm:mb-12 mb-12 bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
               Projects
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="relative max-h-[470px] bg-zinc-900 rounded-lg p-6 mb-4 shadow-md overflow-hidden transition-all duration-500 ease-in-out group">
+            <div className="relative sm:p-6 max-h-[470px] bg-zinc-900 rounded-lg p-6 mb-4 shadow-md overflow-hidden transition-all duration-500 ease-in-out group">
                 <img
                   src={Musafir}
                   alt="Project preview"
-                  className="aspect-video w-full h-48 object-cover rounded-md"
+                  className="aspect-video w-full sm:h-48 h-48 object-cover rounded-md"
                 />
 
                 <div className="p-3">
@@ -327,8 +335,7 @@ export default function Component() {
                   </p>
 
                   <p className="text-base font-normal text-gray-300 leading-relaxed transition duration-500 ease-out mt-2">
-                    Enhances travel experience by providing insights into hidden
-                    street food gems, cafes, and trending spots across the city.{' '}
+                  Enhances travel experience by providing insights into hidden street food gems, cafes, and trending spots across the city.{' '}
                   </p>
 
                   <div className="flex flex-wrap gap-2 mb-4 mt-4">
@@ -346,31 +353,31 @@ export default function Component() {
                     </span>
                   </div>
                   <div className="flex items-center gap-4">
-                  <a
-                    target="_blank"
-                    href="https://github.com/parthmahaa/musafir"
-                    className="flex items-center gap-2 text-gray-300 hover:text-white transition duration-200"
-                  >
-                    <FaGithub className="w-5 h-5" />
-                    <span>Source code</span>
-                  </a>
+                    <a
+                      target="_blank"
+                      href="https://github.com/parthmahaa/musafir"
+                      className="flex items-center gap-2 text-gray-300 hover:text-white transition duration-200"
+                    >
+                      <FaGithub className="w-5 h-5" />
+                      <span>Source code</span>
+                    </a>
 
-                  <a
-                    target="_blank"
-                    // href="#Projects" // Replace with your actual demo URL
-                    className="flex items-center gap-1 text-gray-300 hover:text-white transition-colors duration-200 group/demo"
-                  >
-                    <FaArrowUpRightFromSquare className="w-4 h-4 transition-transform duration-200 group-hover/demo:translate-x-0.5 group-hover/demo:-translate-y-0.5" />
-                    <span>Live Demo</span>
-                  </a>
-                </div>
+                    <a
+                      target="_blank"
+                      // href="#Projects" // Replace with your actual demo URL
+                      className="flex items-center gap-1 text-gray-300 hover:text-white transition-colors duration-200 group/demo"
+                    >
+                      <FaArrowUpRightFromSquare className="w-4 h-4 transition-transform duration-200 group-hover/demo:translate-x-0.5 group-hover/demo:-translate-y-0.5" />
+                      <span>Live Demo</span>
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div className="relative max-h-[470px] bg-zinc-900 rounded-lg p-6 mb-4 shadow-md overflow-hidden transition-all duration-500 ease-in-out group">
+              <div className="relative sm:p-6 max-h-[470px] bg-zinc-900 rounded-lg p-6 mb-4 shadow-md overflow-hidden transition-all duration-500 ease-in-out group">
                 <img
                   src={GeoPulse}
                   alt="Project preview"
-                  className="aspect-video w-full h-48 object-cover rounded-md"
+                  className="aspect-video w-full sm:h-48 h-48 object-cover rounded-md"
                 />
 
                 <div className="p-3">
@@ -379,7 +386,8 @@ export default function Component() {
                   </p>
 
                   <p className="text-base font-normal text-gray-300 leading-relaxed transition duration-500 ease-out mt-2">
-                  Automated attendance tracking app which will log a user's attendance within 200m of proximity user's working space.{' '}
+                    Automated attendance tracking app which will log a user's
+                    attendance within 200m of proximity user's working space.{' '}
                   </p>
 
                   <div className="flex flex-wrap gap-2 mb-4 mt-4">
@@ -391,24 +399,24 @@ export default function Component() {
                     </span>
                   </div>
                   <div className="flex items-center gap-4">
-                  <a
-                    target="_blank"
-                    href="https://github.com/parthmahaa/Geo-Pulse"
-                    className="flex items-center gap-2 text-gray-300 hover:text-white transition duration-200"
-                  >
-                    <FaGithub className="w-5 h-5" />
-                    <span>Source code</span>
-                  </a>
+                    <a
+                      target="_blank"
+                      href="https://github.com/parthmahaa/Geo-Pulse"
+                      className="flex items-center gap-2 text-gray-300 hover:text-white transition duration-200"
+                    >
+                      <FaGithub className="w-5 h-5" />
+                      <span>Source code</span>
+                    </a>
 
-                  <a
-                    target="_blank"
-                    // href="#Projects" // Replace with your actual demo URL
-                    className="flex items-center gap-1 text-gray-300 hover:text-white transition-colors duration-200 group/demo"
-                  >
-                    <FaArrowUpRightFromSquare className="w-4 h-4 transition-transform duration-200 group-hover/demo:translate-x-0.5 group-hover/demo:-translate-y-0.5" />
-                    <span>Live Demo</span>
-                  </a>
-                </div>
+                    <a
+                      target="_blank"
+                      // href="#Projects" // Replace with your actual demo URL
+                      className="flex items-center gap-1 text-gray-300 hover:text-white transition-colors duration-200 group/demo"
+                    >
+                      <FaArrowUpRightFromSquare className="w-4 h-4 transition-transform duration-200 group-hover/demo:translate-x-0.5 group-hover/demo:-translate-y-0.5" />
+                      <span>Live Demo</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -486,10 +494,10 @@ export default function Component() {
         {/* CV Section */}
         <section
           id="Contact"
-          className="min-h-screen flex items-center justify-center"
+          className="min-h-screen flex items-center justify-center sm:px-6 lg:px-8"
         >
           <div className="max-w-6xl w-full">
-            <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
+            <h1 className="text-4xl md:text-5xl font-bold  sm:mb-12  text-center mb-12 bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
               Contact Me
             </h1>
 
@@ -535,13 +543,13 @@ export default function Component() {
               </div>
 
               {/* Contact Form */}
-              <form className="space-y-4" onSubmit={onSubmit}>
+              <form className="space-y-4 sm:space-y-6" onSubmit={onSubmit}>
                 <input
                   type="hidden"
                   name="access_key"
                   value="ef1dfb2c-ae23-4c35-b0cd-9658c9faaee7"
                 ></input>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
                   <input
                     type="text"
                     name="name"
