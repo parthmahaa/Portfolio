@@ -429,24 +429,57 @@ export default function App() {
               Here are technologies and tools I work with:
             </p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              {[
-                { icon: FaReact, name: 'React', color: '#61DAFB' },
-                { icon: FaJsSquare, name: 'JavaScript', color: '#F7DF1E' },
-                { icon: FaHtml5, name: 'HTML', color: '#E34F26' },
-                { icon: FaCss3Alt, name: 'CSS', color: '#1572B6' },
-                { icon: FaNodeJs, name: 'Node.js', color: '#339933' },
-                { icon: SiExpress, name: 'Express', color: '#ffffff' },
-                { icon: SiMongodb, name: 'MongoDB', color: '#47A248' },
-                { icon: FaJava, name: 'Java', color: '#007396' },
-                { icon: SiSpringboot, name: 'Spring Boot', color: '#6DB33F' },
-                { icon: SiFlutter, name: 'Flutter', color: '#02569B' },
-                { icon: FaGitAlt, name: 'Git', color: '#F05032' },
-              ].map((skill, index) => (
-                <div key={index} className="bg-zinc-900 rounded-lg p-6 flex flex-col items-center justify-center aspect-square">
-                  <skill.icon className="w-16 h-16 mb-4 p-2" style={{ color: skill.color }} />
-                  <span className="text-gray-300 text-lg">{skill.name}</span>
-                </div>
-              ))}
+              {/* Row 1 */}
+              <div className="bg-zinc-900 rounded-lg p-6 flex flex-col items-center justify-center aspect-square">
+                <FaReact className="w-16 h-16 mb-4 p-2 text-[#61DAFB]" />
+                <span className="text-gray-300 text-lg">React</span>
+              </div>
+              <div className="bg-zinc-900 rounded-lg p-6 flex flex-col items-center justify-center aspect-square">
+                <FaJsSquare className="w-16 h-16 mb-4 p-2 text-[#F7DF1E]" />
+                <span className="text-gray-300 text-lg">JavaScript</span>
+              </div>
+              <div className="bg-zinc-900 rounded-lg p-6 flex flex-col items-center justify-center aspect-square">
+                <FaHtml5 className="w-16 h-16 mb-4 p-2 text-[#E34F26]" />
+                <span className="text-gray-300 text-lg">HTML</span>
+              </div>
+
+              {/* Row 2 */}
+              <div className="bg-zinc-900 rounded-lg p-6 flex flex-col items-center justify-center aspect-square">
+                <FaCss3Alt className="w-16 h-16 mb-4 p-2 text-[#1572B6]" />
+                <span className="text-gray-300 text-lg">CSS</span>
+              </div>
+              <div className="bg-zinc-900 rounded-lg p-6 flex flex-col items-center justify-center aspect-square">
+                <FaNodeJs className="w-16 h-16 mb-4 p-2 text-[#339933]" />
+                <span className="text-gray-300 text-lg">Node.js</span>
+              </div>
+              <div className="bg-zinc-900 rounded-lg p-6 flex flex-col items-center justify-center aspect-square">
+                <SiExpress className="w-16 h-16 mb-4 p-2 text-gray-300" />
+                <span className="text-gray-300 text-lg">Express</span>
+              </div>
+              <div className="bg-zinc-900 rounded-lg p-6 flex flex-col items-center justify-center aspect-square">
+                <SiMongodb className="w-16 h-16 mb-4 p-2 text-[#47A248]" />
+                <span className="text-gray-300 text-lg">MongoDB</span>
+              </div>
+
+              {/* Row 3 */}
+              <div className="bg-zinc-900 rounded-lg p-6 flex flex-col items-center justify-center aspect-square">
+                <FaJava className="w-16 h-16 mb-4 p-2 text-[#007396]" />
+                <span className="text-gray-300 text-lg">Java</span>
+              </div>
+              <div className="bg-zinc-900 rounded-lg p-6 flex flex-col items-center justify-center aspect-square">
+                <SiSpringboot className="w-16 h-16 mb-4 p-2 text-[#6DB33F]" />
+                <span className="text-gray-300 text-lg">Spring Boot</span>
+              </div>
+              <div className="bg-zinc-900 rounded-lg p-6 flex flex-col items-center justify-center aspect-square">
+                <SiFlutter className="w-16 h-16 mb-4 p-2 text-[#02569B]" />
+                <span className="text-gray-300 text-lg">Flutter</span>
+              </div>
+
+              {/* Row 4 */}
+              <div className="bg-zinc-900 rounded-lg p-6 flex flex-col items-center justify-center aspect-square">
+                <FaGitAlt className="w-16 h-16 mb-4 p-2 text-[#F05032]" />
+                <span className="text-gray-300 text-lg">Git</span>
+              </div>
             </div>
           </div>
         </section>
