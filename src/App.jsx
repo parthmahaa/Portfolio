@@ -315,7 +315,7 @@ export default function App() {
               Projects
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="relative sm:p-6 max-h-[470px] bg-zinc-900 rounded-lg p-6 mb-4 shadow-md overflow-hidden transition-all duration-500 ease-in-out group">
+              <div className="relative sm:p-6 max-h-[470px] bg-zinc-900 rounded-lg p-4 mb-4 shadow-md overflow-hidden transition-all duration-500 ease-in-out group">
                 <img
                   src={Musafir}
                   alt="Project preview"
@@ -328,7 +328,7 @@ export default function App() {
                   </p>
 
                   <p className="text-base font-normal text-gray-300 leading-relaxed transition duration-500 ease-out mt-2">
-                    Enhances travel experience by providing insights into hidden street food gems, cafes, and trending spots across city.{' '}
+                    Enhances travel experience by providing insights into hidden street food gems, cafes, and trending spots across the city.{' '}
                   </p>
 
                   <div className="flex flex-wrap gap-2 mb-4 mt-4">
