@@ -328,7 +328,7 @@ export default function App() {
                   </p>
 
                   <p className="text-base font-normal text-gray-300 leading-relaxed transition duration-500 ease-out mt-2">
-                    Enhances travel experience by providing insights into hidden street food gems, cafes, and trending spots across the city.{' '}
+                    Enhances travel experience by providing insights into hidden street food gems, cafes, and trending spots across city.{' '}
                   </p>
 
                   <div className="flex flex-wrap gap-2 mb-4 mt-4">
@@ -355,14 +355,14 @@ export default function App() {
                       <span>Source code</span>
                     </a>
 
-                    <a
+                    {/* <a
                       target="_blank"
                       href="#projects"
                       className="flex items-center gap-1 text-gray-300 hover:text-white transition-colors duration-200 group/demo"
                     >
                       <FaArrowUpRightFromSquare className="w-4 h-4 transition-transform duration-200 group-hover/demo:translate-x-0.5 group-hover/demo:-translate-y-0.5" />
                       <span>Live Demo</span>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -401,14 +401,14 @@ export default function App() {
                       <span>Source code</span>
                     </a>
 
-                    <a
+                    {/* <a
                       target="_blank"
                       href="#projects"
                       className="flex items-center gap-1 text-gray-300 hover:text-white transition-colors duration-200 group/demo"
                     >
                       <FaArrowUpRightFromSquare className="w-4 h-4 transition-transform duration-200 group-hover/demo:translate-x-0.5 group-hover/demo:-translate-y-0.5" />
                       <span>Live Demo</span>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
