@@ -153,9 +153,10 @@ export default function App() {
                     <a
                       href={
                         section === 'Resume'
-                          ? 'https://x.com/home'
+                          ? './assets/ParthMahaCV.pdf'
                           : `#${section.toLowerCase()}`
                       }
+                      download={section === 'Resume' ? 'ParthMahaCV.pdf' : undefined}
                       target={section === 'Resume' ? '_blank' : '_self'}
                       className={`text-lg transition-colors ${
                         activeSection.toLowerCase() === section.toLowerCase()
