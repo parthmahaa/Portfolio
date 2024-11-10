@@ -153,7 +153,7 @@ export default function App() {
                     <a
                       href={
                         section === 'Resume'
-                          ? '../public/ParthMahaCV.pdf'
+                          ? '/ParthMahaCV.pdf'
                           : `#${section.toLowerCase()}`
                       }
                       download={section === 'Resume' ? 'ParthMahaCV.pdf' : undefined}
