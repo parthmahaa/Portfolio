@@ -177,7 +177,7 @@ export default function App() {
               )}
             </ul>
             <button
-              className="p-2 text-gray-300 hover:text-white md:hidden"
+              className="p-2 text-white hover:text-white hover: md:hidden"
               aria-label="Toggle menu"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
@@ -201,7 +201,7 @@ export default function App() {
           </div>
           <div
             className={`md:hidden transition-all duration-300 ease-in-out ${
-              isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+              isMenuOpen ? 'max-h-screen placeholder-opacity-90 backdrop-blur-md' : 'max-h-0 opacity-0'
             } overflow-hidden`}
           >
             <div className="flex flex-col space-y-4 pt-4">
@@ -225,7 +225,7 @@ export default function App() {
         {/* Home Section */}
         <section
           id="home"
-          className="min-h-screen flex items-center justify-center px-4 lg:px-8 pt-20 md:pt-0"
+          className="min-h-screen flex items-center justify-center px-4 lg:px-8 pt-20 pb-0 mb-0 md:pt-0"
         >
           <div className="max-w-6xl w-full grid lg:grid-cols-[2fr,1fr] gap-8 items-center">
             <div className="space-y-6">
@@ -309,14 +309,14 @@ export default function App() {
         {/* Projects Section */}
         <section
           id="projects"
-          className="min-h-screen w-full py-24 flex items-center justify-center sm:py-24 sm:px-6 lg:px-8"
+          className="min-h-screen w-full py-5 flex items-center justify-center sm:py-24 sm:px-6 lg:px-8"
         >
           <div className="max-w-4xl mx-auto px-4">
-            <h1 className="text-4xl sm:text-4xl md:text-5xl font-bold text-center pb-10 sm:mb-12 mb-12 bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
+            <h1 className="text-4xl sm:text-4xl md:text-5xl pb-4 font-bold text-center  sm:mb-12 bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
               Projects
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="relative sm:p-6 max-h-[470px] bg-zinc-900 rounded-lg p-4 mb-4 shadow-md overflow-hidden transition-all duration-500 ease-in-out group">
+              <div className="relative sm:p-6 max-h-[470px] bg-zinc-900 rounded-lg p-1 mb-2 shadow-md overflow-hidden transition-all duration-500 ease-in-out group">
                 <img
                   src={Musafir}
                   alt="Project preview"
@@ -332,7 +332,7 @@ export default function App() {
                     Enhances travel experience by providing insights into hidden street food gems, cafes, and trending spots across the city.{' '}
                   </p>
 
-                  <div className="flex flex-wrap gap-2 mb-4 mt-4">
+                  <div className="flex flex-wrap gap-2 mb-2 mt-2.5">
                     <span className="px-3 py-1 text-sm bg-zinc-700 text-gray-300 rounded-full">
                       React
                     </span>
@@ -367,7 +367,7 @@ export default function App() {
                   </div>
                 </div>
               </div>
-              <div className="relative sm:p-6 max-h-[470px] bg-zinc-900 rounded-lg p-6 mb-4 shadow-md overflow-hidden transition-all duration-500 ease-in-out group">
+              <div className="relative sm:p-6 max-h-[470px] bg-zinc-900 rounded-lg p-1 mb-2 shadow-md overflow-hidden transition-all duration-500 ease-in-out group">
                 <img
                   src={GeoPulse}
                   alt="Project preview"
