@@ -225,7 +225,7 @@ export default function App() {
         {/* Home Section */}
         <section
           id="home"
-          className="min-h-screen flex items-center justify-center px-4 lg:px-8 pt-20 pb-0 mb-0 md:pt-0"
+          className="min-h-screen flex items-center justify-center px-4 lg:px-8 pt-16 pb-8 md:pt-0"
         >
           <div className="max-w-6xl w-full grid lg:grid-cols-[2fr,1fr] gap-8 items-center">
             <div className="space-y-6">
@@ -309,10 +309,10 @@ export default function App() {
         {/* Projects Section */}
         <section
           id="projects"
-          className="min-h-screen w-full py-5 flex items-center justify-center sm:py-24 sm:px-6 lg:px-8"
+          className="py-16 flex items-center justify-center sm:py-24 sm:px-6 lg:px-8"
         >
-          <div className="max-w-4xl mx-auto px-4">
-            <h1 className="text-4xl sm:text-4xl md:text-5xl pb-4 font-bold text-center  sm:mb-12 bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
+          <div className="max-w-5xl mx-auto px-4">
+            <h1 className="text-4xl sm:text-4xl md:text-5xl pb-8 font-bold text-center  sm:mb-12 bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
               Projects
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -420,13 +420,13 @@ export default function App() {
         {/* Skills Section */}
         <section
           id="skills"
-          className="min-h-screen flex items-center justify-center"
+          className="py-16 flex items-center justify-center"
         >
-          <div className="max-w-2xl mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
+          <div className="max-w-4xl mx-auto px-4 text-center">
+            <h1 className="text-4xl md:text-5xl font-bold text-center mb-8 bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
               Skills
             </h1>
-            <p className="text-gray-300 pt-0 pb-4 text-lg leading-relaxed">
+            <p className="text-gray-300 pt-0 pb-8 text-lg leading-relaxed">
               Here are technologies and tools I work with:
             </p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -484,10 +484,10 @@ export default function App() {
         {/* Contact Section */}
         <section
           id="contact"
-          className="min-h-screen flex items-center justify-center sm:px-6 lg:px-8"
+          className="py-16 flex items-center justify-center sm:px-6 lg:px-8"
         >
           <div className="max-w-6xl w-full">
-            <h1 className="text-4xl md:text-5xl font-bold sm:mb-12 text-center mb-12 bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
+            <h1 className="text-4xl md:text-5xl font-bold sm:mb-12 text-center mb-8 bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
               Contact Me
             </h1>
 
