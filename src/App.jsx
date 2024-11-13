@@ -210,9 +210,10 @@ export default function App() {
                   key={section}
                   onClick={() =>
                     section === 'Resume'
-                      ? window.open('https://x.com/home', '_blank')
+                      ? window.open('/ParthMahaCV.pdf', '_blank')
                       : handleScroll(section.toLowerCase())
                   }
+                  download={section === 'Resume' ? 'ParthMahaCV.pdf' : undefined}
                   className="px-3 py-2 rounded-lg transition-colors text-left text-gray-300 hover:text-white hover:bg-white/5"
                 >
                   {section}
