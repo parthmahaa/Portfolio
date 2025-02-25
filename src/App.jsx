@@ -23,6 +23,7 @@ import {
   SiMongodb,
   SiSpringboot,
   SiExpress,
+  SiPython,
   SiFlutter,
 } from 'react-icons/si';
 import Musafir from './assets/musafir.png';
@@ -481,6 +482,10 @@ export default function App() {
               <div className="bg-zinc-900 rounded-lg p-6 flex flex-col items-center justify-center aspect-square">
                 <SiSpringboot className="w-16 h-16 mb-4 p-2 text-[#6DB33F]" />
                 <span className="text-gray-300 text-lg">Spring Boot</span>
+              </div>
+              <div className="bg-zinc-900 rounded-lg p-6 flex flex-col items-center justify-center aspect-square">
+                <SiPython className="w-16 h-16 mb-4 p-2 text-[#3776AB]" />
+                <span className="text-gray-300 text-lg">Python</span>
               </div>
             </div>
           </div>
