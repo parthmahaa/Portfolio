@@ -357,14 +357,14 @@ export default function App() {
                       <span>Source code</span>
                     </a>
 
-                    {/* <a
+                    <a
                       target="_blank"
-                      href="#projects"
+                      href="https://musafir-main.vercel.app/"
                       className="flex items-center gap-1 text-gray-300 hover:text-white transition-colors duration-200 group/demo"
                     >
                       <FaArrowUpRightFromSquare className="w-4 h-4 transition-transform duration-200 group-hover/demo:translate-x-0.5 group-hover/demo:-translate-y-0.5" />
                       <span>Live Demo</span>
-                    </a> */}
+                    </a>
                   </div>
                 </div>
               </div>
@@ -477,6 +477,10 @@ export default function App() {
               <div className="bg-zinc-900 rounded-lg p-6 flex flex-col items-center justify-center aspect-square">
                 <FaGitAlt className="w-16 h-16 mb-4 p-2 text-[#F05032]" />
                 <span className="text-gray-300 text-lg">Git</span>
+              </div>
+              <div className="bg-zinc-900 rounded-lg p-6 flex flex-col items-center justify-center aspect-square">
+                <SiSpringboot className="w-16 h-16 mb-4 p-2 text-[#6DB33F]" />
+                <span className="text-gray-300 text-lg">Spring Boot</span>
               </div>
             </div>
           </div>
