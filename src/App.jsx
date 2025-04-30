@@ -509,7 +509,7 @@ export default function App() {
                     <FaMapMarkerAlt className="w-6 h-6 text-white" />
                   </div>
                   <div className="flex items-center">
-                    <p className="text-gray-400">Surat Gujarat, India 395017</p>
+                    <p className="text-gray-400">Surat, India 395017</p>
                   </div>
                 </div>
 
